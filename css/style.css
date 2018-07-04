@@ -1,8 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+/* globals */
+*{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
 body{
   background-color: black;
   font-family: 'Roboto Condensed', sans-serif;
 }
+.frame{
+  height:100vh;
+}
+.btn {
+  padding: 0.5rem 2rem;
+  border: 4px #ffecca solid;
+  display: inline-block;
+  margin-top: 4vh;
+  border-radius: 50px;
+  text-decoration: none;
+  background-color: #ffd27e;
+  color: rgb(0, 0, 0);
+  transition: background 500ms ease;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.3),
+  -30px 0px 40px rgba(0, 0, 0, 0.3);
+}
+.btn:hover {
+  background: #f8bf54;
+}
+#sign-up{
+  color: #333;
+  margin-top: 1.5vh;
+  background-color:white;
+  border: 4px #dddddd solid;
+}
+/* landing */
 #landing{
   background-image: url("https://i.imgur.com/TEEFRKk.gif");
   background-position: center;
@@ -10,6 +44,12 @@ body{
   height: 100vh;
   justify-content: center;
   align-items: center;
+}
+#logo{
+  padding-top: 5vh;
+  padding-bottom: 0;
+  width:26vh;
+  height: 26vh;
 }
 #landing-text{
   background: white;
@@ -31,8 +71,9 @@ body{
 #landing-text-inner h2{
   margin: 0;
   padding: 0;
+  transform: translateY(-0.8vh);
   text-align: center;
-  font-size: 1.2rem; 
+  font-size: 1.1rem; 
   line-height: 104%;
   color: grey;
 }
@@ -40,26 +81,53 @@ body{
   padding-top: 0;
   font-size: .95rem;
 }
-#logo{
-  padding-top: 3vh;
-  padding-bottom: 0.1vh;
-  width:26vh;
-  height: 26vh;
+/* landing end */
+
+/* description */
+#description{
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  
+  background: red;
 }
-.btn {
-  padding: 0.5rem 2rem;
-  border: 4px #dddddd solid;
-  display: inline-block;
-  margin-top: 5vh;
-  border-radius: 50px;
-  text-decoration: none;
-  background-color:white;
-  color: #333;
-  transition: background 500ms ease;
-  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.3),
-  -30px 0px 40px rgba(0, 0, 0, 0.3);
+#description h2{
+  margin: 3vw;
+  text-align: left;
+  color: white
 }
-.btn:hover {
-  /* color: white; */
-  background: #dddddd;
+#diagram{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.diagram-block{
+  width:80vw;
+  height:16vh;
+  margin-bottom: 3vh;
+  max-width: 800px;
+  background:black;
+}
+#arrow{
+  height:5vh;
+}
+@media only screen and (min-width: 600px) {
+  #diagram{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:80vw;
+    height:80vh;
+  }
+  .diagram-block{
+    width:15vw;
+
+  }
+  #arrow{
+    width:5vw;
+  }
+}
+/* description-end */
