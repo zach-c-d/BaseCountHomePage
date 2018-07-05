@@ -21,6 +21,7 @@ body {
   margin-top: 4vh;
   border-radius: 50px;
   text-decoration: none;
+  text-align: center;
   background-color: #ffd27e;
   color: rgb(0, 0, 0);
   transition: background 500ms ease;
@@ -95,7 +96,7 @@ body {
   padding: 0;
   transform: translateX(-50%);
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   line-height: 104%;
   color: grey;
 }
@@ -207,7 +208,10 @@ body {
   color: white;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 500px) {
+  #landing-text h2{
+    font-size: 1.1rem;
+  }
   #description h2 {
     margin: 10vh 5vw 5vw 5vw;
     font-size: 2.5rem;
