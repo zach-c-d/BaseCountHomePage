@@ -1,2 +1,2 @@
 # BaseCountHomePage
-The landing page for basecount.ca
+The landing page for the basecount project
