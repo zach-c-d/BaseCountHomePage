@@ -208,7 +208,7 @@ body {
   color: white;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 40em) {
   #landing-text h2{
     font-size: 1.1rem;
   }
