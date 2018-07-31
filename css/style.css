@@ -208,7 +208,7 @@ body {
   color: white;
 }
 
-@media only screen and (min-width: 40em) {
+/* @media only screen and (min-width: 50em) {
   #landing-text h2{
     font-size: 1.1rem;
   }
@@ -262,4 +262,4 @@ body {
     height: 40vh;
     transform: rotate(270deg);
   }
-}
+} */
